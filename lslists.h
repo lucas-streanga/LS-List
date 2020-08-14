@@ -228,7 +228,7 @@ class list
             {
                 if(temp->data == obj)
                 {
-                    remove(findIndex(obj));
+                    remove(find_index(obj));
                     return;
                 }
                 temp = temp->next;
@@ -290,7 +290,7 @@ class list
 		return nullptr;
 	}
 	
-	int findIndex(t obj)
+	int find_index(t obj)
     {
         int i = 0;
         node *temp = head;
@@ -318,7 +318,7 @@ class list
 			if(found.find(temp->data) == nullptr) //Not in the list...
 				found.add_back(temp->data);	
             else
-                remove(findIndex(temp->data));
+                remove(find_index(temp->data));
 
 			temp = temp->next;
 		}
