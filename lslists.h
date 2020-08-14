@@ -499,6 +499,7 @@ class bst
 	void clear()
 	{
 		clear(root);
+        printed.clear();
 	}
 	
 	virtual ~bst()
