@@ -353,6 +353,8 @@ class stack : protected list<t>
 	{
 		return this->at(0);
 	}
+	
+	using list<t>::clear;
 
 	virtual ~stack()
 	{
@@ -381,6 +383,8 @@ class queue : protected list<t>
 	{
 		return this->at(0);
 	}
+	
+	using list<t>::clear;
 
     virtual ~queue()
 	{
