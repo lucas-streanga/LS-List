@@ -11,7 +11,7 @@ This header file includes 4 template classes, `list`, `stack`, `queue`, and a bi
 An empty `list` has an overhead of 16 bytes on a 64-bit system. Each additional item added to the list will result in another 8 bytes of overhead. 
 
 ### Features
-list is general purpose, and allows:
+`list` is general purpose, and allows:
 - adding items to the front or back of list
 - removing items either by finding them or by specifying an index
 - getting items either by finding them or by specifying an index, both allowing item to be changed with `=`
@@ -44,3 +44,26 @@ Lists can also free all memory by a call to the `clear()` function.
 
 ### Exceptions
 Exception `exp_out_of_bounds` will only be thrown when trying to access out of bounds elements in the list.
+
+## stack
+`stack` is a template class inherited from `list`. Stacks will also grow and shrink dynamically and function very similar to lists, with restricted access to provide LIFO functionality.
+
+### Features
+`stack` is general purpose, and allows:
+- pushing a new item onto the stack
+- popping an item off the stack
+- peaking at the item on top of the stack
+
+In addition, `stack` can be inherited from, as it has a virtual destructor. 
+
+### Function Summary
+- `pop()` will return the top element in the stack and will remove it from the stack.
+- `peak()` will return a reference to the top element in the stack.
+- `push(data)` will return void and will add the data to the top of the stack.
+
+### Memory
+Stacks will automatically free all memory upon destruction. 
+Stacks can also free all memory by a call to the `clear()` function.
+
+### Exceptions
+Exception `exp_out_of_bounds` will only be thrown when trying to access out of bounds elements in the stack.
