@@ -8,12 +8,12 @@ This header file includes 4 template classes, `list`, `stack`, `queue`, and a bi
 `list` is a template class that can be created with any data. list grows and shrinks dynamically.
 ### Features
 list is general purpose, and allows:
--adding items to the front or back of list
--removing items either by finding them or by specifying an index
--getting items either by finding them or by specifying an index, both allowing item to be changed with `=`
--sorting list using quicksort algorithm, including using basic `>` operator or by pointer to function
--condensing list with condensing algorithm
--find the size of the list
+- adding items to the front or back of list
+- removing items either by finding them or by specifying an index
+- getting items either by finding them or by specifying an index, both allowing item to be changed with `=`
+- sorting list using quicksort algorithm, including using basic `>` operator or by pointer to function
+- condensing list with condensing algorithm
+- find the size of the list
 
 ### Memory
 Lists will automatically free all memory upon destruction. 
