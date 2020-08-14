@@ -481,17 +481,17 @@ class bst
             add(root, obj);
 	}
 
-	void printPostOrder()
+	void print_PostOrder()
 	{
 		 printPostOrder(root);
 	}
     
-	void printInOrder()
+	void print_InOrder()
 	{
 		printInOrder(root);
 	}
 
-	void printPreOrder()
+	void print_PreOrder()
 	{
         printPreOrder(root);
 	}
