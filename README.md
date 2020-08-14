@@ -1,11 +1,15 @@
 # LS-List
-Repository for list library for C++ I created.
+Repository for list library for C++ I created. Everything is in the namespace `ls`. 
 
 ## Class Summary
 This header file includes 4 template classes, `list`, `stack`, `queue`, and a binary search tree  `bst` class. 
 
 ## list
-`list` is a template class that can be created with any data. list grows and shrinks dynamically.
+`list` is a template class that can be created with any data. lists grow and shrink dynamically.
+
+### Overhead
+An empty `list` has an overhead of 16 bytes on a 64-bit system. Each additional item added to the list will result in another 8 bytes of overhead. 
+
 ### Features
 list is general purpose, and allows:
 - adding items to the front or back of list
