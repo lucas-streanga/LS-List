@@ -91,3 +91,21 @@ Queues can also free all memory by a call to the `clear()` function.
 ### Exceptions
 Exception `exp_out_of_bounds` will only be thrown when trying to access out of bounds elements in the queue.
 
+## bst
+`bst` is a general purpose binary search tree template class. `bst` will grow and shrink dynamically. Items added to the bst MUST support the `<` operator.
+
+## Overhead
+An `bst` will use 32 bytes on a 64-bit system. This is because a `list` is kept within the `bst` to store printed out data instead of printing them directly to an ostream.
+
+## Features
+- add items to the bst and have them put in the correct place.
+- print items in postorder, preorder, and inorder configurations.
+- access printed items via a `list` within the bst.
+
+## Function and Member Summary
+- `list <data *> printed` is a `list` within the bst to store the printed values. It stores pointers to avoid copying any data from the bst to the list.
+- `add(data)` will return `void` and will add the data to the appropriate spot in the bst.
+- `print_PostOrder()` will return `void` and write to the `printed` list the contents of the bst postorder.
+- `print_InOrder()` will return `void` and write to the `printed` list the contents of the bst inorder.
+- `print_PreOrder()` will return `void` and write to the `printed` list the contents of the bst preorder.
+- `clear()` will return void and will delete all data within the bst.
