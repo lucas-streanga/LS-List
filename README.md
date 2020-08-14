@@ -18,6 +18,7 @@ list is general purpose, and allows:
 - sorting list using quicksort algorithm, including using basic `>` operator or by pointer to function
 - condensing list with condensing algorithm
 - find the size of the list
+
 In addition, `list` can be inherited from, as it has a virtual destructor.
 
 ### Function Summary
