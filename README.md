@@ -67,3 +67,27 @@ Stacks can also free all memory by a call to the `clear()` function.
 
 ### Exceptions
 Exception `exp_out_of_bounds` will only be thrown when trying to access out of bounds elements in the stack.
+
+## queue
+`queue` is a template class inherited from `list`. Queues will also grow and shrink dynamically and function very similar to lists, with restricted access to provide FIFO functionality.
+
+### Features
+`queue` is general purpose, and allows:
+- enqueueing a new item onto the queue
+- dequeueing an item off the queue
+- peaking at the item at the front of the queue
+
+In addition, `queue` can be inherited from, as it has a virtual destructor. 
+
+### Function Summary
+- `dequeue()` will return the first element in the queue and will remove it from the queue.
+- `peak()` will return a reference to the first element in the queue.
+- `enqueue(data)` will return void and will add the data to the front of the queue.
+
+### Memory
+Queues will automatically free all memory upon destruction. 
+Queues can also free all memory by a call to the `clear()` function.
+
+### Exceptions
+Exception `exp_out_of_bounds` will only be thrown when trying to access out of bounds elements in the queue.
+
